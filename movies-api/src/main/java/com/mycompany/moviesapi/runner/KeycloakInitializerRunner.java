@@ -28,6 +28,7 @@ public class KeycloakInitializerRunner implements CommandLineRunner {
 
     private final Keycloak keycloakAdmin;
 
+    // Esta clase se usa para crear un reino (generalmente para ambientes de prueba)
     @Override
     public void run(String... args) {
         log.info("Initializing '{}' realm in Keycloak ...", COMPANY_SERVICE_REALM_NAME);
